@@ -14,17 +14,18 @@ namespace aoc2015
             StringBuilder res = new StringBuilder(s.Length * 2);
             int count;
             char c;
+            int pos = 0;
 
-            while (s.Length > 0)
+            while (pos < s.Length)
             {
-                c = s[0];
-                s = s.Substring(1);
+                c = s[pos];
                 count = 1;
+                pos++;
 
-                while (s.Length > 0 && s[0] == c)
+                while (pos < s.Length && s[pos] == c)
                 {
-                    s = s.Substring(1);
                     count++;
+                    pos++;
                 }
 
                 res.Append($"{count}{c}");
