@@ -10,9 +10,9 @@ namespace aoc2015
     {
         static void Main(string[] args)
         {
-            new Day20().Part1();
+            new Day23().Part1();
 
-            new Day20().Part2();
+            new Day23().Part2();
 
             Console.ReadLine();
         }
